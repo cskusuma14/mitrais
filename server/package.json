@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --detectOpenHandles --runInBand --forceExit --coverage",
+    "dbcreatetest": "npx sequelize-cli db:create --env=test",
+    "migratetest": "npx sequelize-cli db:migrate --env=test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.2.1",
+    "sequelize": "^6.2.4"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "sequelize-cli": "^6.1.0",
+    "supertest": "^4.0.2"
+  }
+}
