@@ -7,7 +7,9 @@
     "start": "node server.js",
     "test": "jest --detectOpenHandles --runInBand --forceExit --coverage",
     "dbcreatetest": "npx sequelize-cli db:create --env=test",
-    "migratetest": "npx sequelize-cli db:migrate --env=test"
+    "migratetest": "npx sequelize-cli db:migrate --env=test",
+    "dbcreatedev": "npx sequelize-cli db:create",
+    "migratedev": "npx sequelize-cli db:migrate"
   },
   "keywords": [],
   "author": "",
